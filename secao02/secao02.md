@@ -57,7 +57,7 @@ Configurar o Jenkins
 1º Clique em admin, muda a senha pra admin/admin
 
 2º Cliente em jenkins (seta para baixo) > Gerenciar Jenkins > Global Tool Configuration > Adicionar JDK 
-    Nesse passo adiciona o JDK <b>QUE JÁ ESTA INSTALADO</b> /usr/lib/jvm/java-8-openjdk-amd64
+<br/>Nesse passo adiciona o JDK <b>QUE JÁ ESTA INSTALADO</b> /usr/lib/jvm/java-8-openjdk-amd64
 
 
 ## Aula 11 - Automação de backups e Recovery
