@@ -84,33 +84,33 @@ docker run --name docker-jenkins-3 \
 
 1. Login na Ferramenta
 2. Troca de Senha
-    clica em admin (usuário em cima lado direito)
-    modifica a senha para admin123
+    <br/>clica em admin (usuário em cima lado direito)
+    <br/>modifica a senha para admin123
 
 3. Configuração da JDK
-    Jenkins > Manager > Global Tool Configuration
-    Adicionar JDK > desflega 'Instalar automicativamente' (já esta instalado no container Dokcer) 
-    Em nome: 'java-8-openjdk-amd64'
-    Em JAVA_HOME: '/usr/lib/jvm/java-8-openjdk-amd64' (previamente configurado no DockerFile como ENV)
-
-    Nota.: Talvez de erro de versão no 'Gerenciar o Jenkins' - ignora por hora.
+    <br/>Jenkins > Manager > Global Tool Configuration
+    <br/>Adicionar JDK > desflega 'Instalar automicativamente' (já esta instalado no container Dokcer) 
+    <br/>Em nome: 'java-8-openjdk-amd64'
+    <br/>Em JAVA_HOME: '/usr/lib/jvm/java-8-openjdk-amd64' (previamente configurado no DockerFile como ENV)
+    <br/>
+    <br/>Nota.: Talvez de erro de versão no 'Gerenciar o Jenkins' - ignora por hora.
 
 4. Criação de 2 Jobs 
-    Freestyle e Build
-        Execute shell
-            sleep 60
-            sleep 120
+    <br/>Freestyle e Build
+    <br/>    Execute shell
+    <br/>        sleep 60
+    <br/>        sleep 120
 
 5. Configurar Backup
-    Jenkins > Manager > ThinBackup (plugin)
-    Backup directory /srv/backup
-    flegar 'next build number'
-    flegar 'Move old backups'
-
-    depois clica em Backup Now (é bem rapido)
-    ver no log
-
-    o Jenkins vai criar a na pasta compartilhada (/var/lib/docker/volumes/jenkins_backup_3/_data)
+    <br/>Jenkins > Manager > ThinBackup (plugin)
+    <br/>Backup directory /srv/backup
+    <br/>flegar 'next build number'
+    <br/>flegar 'Move old backups'
+    <br/>
+    <br/>depois clica em Backup Now (é bem rapido)
+    <br/>ver no log
+    <br/>
+    <br/>o Jenkins vai criar a na pasta compartilhada (/var/lib/docker/volumes/jenkins_backup_3/_data)
 
 6. Executar Backup
 
